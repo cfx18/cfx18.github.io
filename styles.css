@@ -198,30 +198,27 @@ a:hover {
 }
 
 .section {
-  padding: 2.2rem 0;
-}
-
-.section + .section {
-  margin-top: 0.5rem;
+  padding: 1.6rem 0;
 }
 
 .section h2 {
   font-family: "Space Grotesk", sans-serif;
   font-size: 1.65rem;
   font-weight: 600;
-  margin: 0 0 1.1rem;
+  margin: 0 0 1rem;
   color: var(--text);
   letter-spacing: -0.02em;
+}
+
+.subsection h2 {
+  padding-bottom: 0.55rem;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 1.1rem;
 }
 
 .section p {
   color: var(--text-soft);
   margin: 0 0 1rem;
-}
-
-/* About: CV layout */
-.about-main {
-  width: 100%;
 }
 
 .bio {
@@ -231,67 +228,51 @@ a:hover {
   color: var(--text-soft);
 }
 
-.cv-heading {
-  font-family: "Space Grotesk", sans-serif;
-  font-size: 1.08rem;
-  font-weight: 600;
-  letter-spacing: 0.02em;
-  color: var(--text);
-  margin: 2rem 0 0.85rem;
-  padding-bottom: 0.35rem;
-}
-
-.cv-list {
-  list-style: none;
+/* Dot lists */
+.dot-list {
   margin: 0;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 1.1rem;
+  padding-left: 1.35rem;
+  list-style-type: disc;
 }
 
-.cv-list li {
-  display: grid;
-  grid-template-columns: 1fr auto;
-  column-gap: 1.5rem;
-  row-gap: 0.2rem;
-  padding: 0;
-}
-
-.cv-role {
-  font-weight: 600;
-  color: var(--text);
+.dot-list li {
+  margin-bottom: 0.85rem;
   font-size: 1rem;
+  line-height: 1.65;
+  color: var(--text-soft);
 }
 
-.cv-org {
-  grid-column: 1;
-  color: var(--text-soft);
-  font-size: 0.94rem;
-  line-height: 1.55;
+.dot-list li:last-child {
+  margin-bottom: 0;
 }
 
-.cv-date {
-  grid-row: 1 / span 2;
-  grid-column: 2;
-  align-self: start;
-  font-family: "Space Grotesk", sans-serif;
-  font-size: 0.9rem;
+.dot-list strong {
+  color: var(--text);
+  font-weight: 600;
+}
+
+.dot-list .item-date {
   color: var(--text-soft);
+  font-size: 0.92rem;
   white-space: nowrap;
 }
 
-.interests {
-  font-size: 1rem;
-  line-height: 1.7;
-  color: var(--text-soft);
+.dot-list li.award-highlight {
+  background: linear-gradient(90deg, #fdf6e8 0%, transparent 85%);
+  margin-left: -0.5rem;
+  padding: 0.45rem 0.5rem 0.45rem 0;
+  border-radius: 6px;
+}
+
+.dot-list li.award-highlight strong {
+  color: #9a6b1a;
 }
 
 /* Publications */
 .pub-list {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 1.4rem;
 }
 
 .pub {
