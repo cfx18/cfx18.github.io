@@ -18,10 +18,12 @@
 
 html {
   scroll-behavior: smooth;
+  width: 100%;
 }
 
 body {
   margin: 0;
+  width: 100%;
   font-family: "Manrope", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   color: var(--text);
   background: var(--bg);
@@ -42,6 +44,8 @@ a:hover {
 /* Two-column layout */
 .layout {
   display: flex;
+  width: 100%;
+  max-width: none;
   min-height: 100vh;
 }
 
@@ -185,11 +189,11 @@ a:hover {
 
 /* Scrollable content — fill remaining viewport */
 .content {
-  flex: 1;
+  flex: 1 1 auto;
   min-width: 0;
-  width: 100%;
+  width: auto;
   max-width: none;
-  padding: 2.8rem 4.5rem 3.5rem;
+  padding: 2.8rem 3.5rem 3.5rem 3rem;
 }
 
 .section {
@@ -214,23 +218,15 @@ a:hover {
   margin: 0 0 1rem;
 }
 
-/* About: CV layout + compact Scholar metrics box */
-.about-grid {
-  display: flex;
-  gap: 2.5rem;
-  align-items: flex-start;
-}
-
+/* About: CV layout */
 .about-main {
-  flex: 1;
-  min-width: 0;
+  width: 100%;
 }
 
 .bio {
   margin-top: 0;
   font-size: 0.95rem;
   line-height: 1.75;
-  max-width: 72ch;
 }
 
 .cv-heading {
@@ -273,7 +269,6 @@ a:hover {
   color: var(--text-soft);
   font-size: 0.86rem;
   line-height: 1.55;
-  max-width: 72ch;
 }
 
 .cv-date {
@@ -289,54 +284,6 @@ a:hover {
 .interests {
   font-size: 0.9rem;
   line-height: 1.7;
-  max-width: 80ch;
-}
-
-/* Compact Scholar-style box */
-.scholar-box {
-  flex-shrink: 0;
-  width: 168px;
-  background: var(--card);
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  padding: 0.7rem 0.8rem;
-}
-
-.scholar-box-title {
-  font-family: "Space Grotesk", sans-serif;
-  font-size: 0.72rem;
-  font-weight: 600;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: var(--accent-strong);
-  border-bottom: 1px solid var(--border);
-  padding-bottom: 0.4rem;
-  margin-bottom: 0.3rem;
-}
-
-.scholar-box table {
-  width: 100%;
-  border-collapse: collapse;
-}
-
-.scholar-box td {
-  font-size: 0.82rem;
-  color: var(--text-soft);
-  padding: 0.18rem 0;
-}
-
-.scholar-box td:last-child {
-  text-align: right;
-  font-family: "Space Grotesk", sans-serif;
-  font-weight: 600;
-  color: var(--accent-strong);
-}
-
-.scholar-box-link {
-  display: inline-block;
-  margin-top: 0.5rem;
-  font-size: 0.76rem;
-  font-weight: 600;
 }
 
 /* Publications */
@@ -416,7 +363,6 @@ a:hover {
   font-size: 0.86rem;
   color: var(--text-soft);
   line-height: 1.6;
-  max-width: 90ch;
 }
 
 .pub-abstract strong {
@@ -471,13 +417,5 @@ a:hover {
 
   .content {
     padding: 1.6rem 1.5rem 2.5rem;
-  }
-
-  .about-grid {
-    flex-direction: column-reverse;
-  }
-
-  .scholar-box {
-    width: 100%;
   }
 }
