@@ -7,203 +7,258 @@
   <meta name="description" content="Feixue Cai — PhD, Tsinghua University. Research in Computational Fluid Dynamics, Uncertainty Quantification, and Machine Learning for Thermal-Fluid Systems." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header class="site-header">
-    <nav class="nav">
-      <a class="nav-brand" href="#top">F. Cai</a>
-      <div class="nav-links">
-        <a href="#about">About</a>
-        <a href="#research">Research</a>
-        <a href="#publications">Publications</a>
-        <a href="#contact">Contact</a>
-      </div>
-    </nav>
-  </header>
-
-  <main id="top">
-    <!-- Hero / intro -->
-    <section class="hero">
-      <div class="hero-photo">
-        <!-- Replace profile.jpg with your own photo (square works best) -->
-        <img src="profile.jpg" alt="Feixue Cai" onerror="this.style.display='none'; this.parentElement.classList.add('placeholder');" />
-        <span class="hero-initials">FC</span>
-      </div>
-      <div class="hero-text">
-        <h1>Feixue Cai</h1>
-        <p class="hero-title">PhD · Tsinghua University</p>
-        <p class="hero-tagline">
-          Computational Fluid Dynamics · Uncertainty Quantification ·
-          Machine Learning for Thermal–Fluid Systems
+  <div class="layout">
+    <!-- Fixed sidebar -->
+    <aside class="sidebar">
+      <div class="sidebar-inner">
+        <div class="avatar">
+          <!-- Replace profile.jpg with your own photo (square works best) -->
+          <img src="profile.jpg" alt="Feixue Cai" onerror="this.style.display='none'; this.parentElement.classList.add('placeholder');" />
+          <span class="avatar-initials">FC</span>
+        </div>
+        <h1 class="sidebar-name">Feixue Cai</h1>
+        <p class="sidebar-title">PhD · Tsinghua University</p>
+        <p class="sidebar-tagline">
+          CFD · Uncertainty Quantification · Machine Learning for Thermal–Fluid Systems
         </p>
-        <div class="hero-links">
+
+        <nav class="sidebar-nav">
+          <a href="#about">About</a>
+          <a href="#publications">Publications</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="sidebar-links">
           <a class="btn" href="https://scholar.google.com/citations?user=UbIC20AAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a>
-          <a class="btn btn-outline" href="mailto:your-email@mails.tsinghua.edu.cn">Email</a>
-          <a class="btn btn-outline" href="https://github.com/your-username" target="_blank" rel="noopener">GitHub</a>
+          <a class="btn btn-outline" href="mailto:caifx22@mails.tsinghua.edu.cn">Email</a>
+          <a class="btn btn-outline" href="https://github.com/cfx18" target="_blank" rel="noopener">GitHub</a>
           <a class="btn btn-outline" href="cv.pdf" target="_blank" rel="noopener">CV</a>
         </div>
       </div>
-    </section>
+    </aside>
 
-    <!-- About -->
-    <section id="about" class="section">
-      <h2>About</h2>
-      <p>
-        I am a researcher working at the intersection of computational fluid
-        dynamics (CFD), uncertainty quantification, and machine learning. My
-        work focuses on data-driven surrogate modeling, active-subspace methods
-        for high-dimensional design exploration, and efficient algorithms for
-        conjugate heat transfer and turbulence modeling — with applications in
-        film cooling, aerothermal design optimization, and chemical kinetics.
-      </p>
-    </section>
+    <!-- Scrollable content -->
+    <main class="content">
+      <!-- About: CV-style, with compact Scholar-like metrics box -->
+      <section id="about" class="section">
+        <h2>About</h2>
+        <div class="about-grid">
+          <div class="about-main">
+            <p class="bio">
+              PhD researcher at Tsinghua University working on computational fluid
+              dynamics, uncertainty quantification, and machine learning for
+              thermal–fluid systems — including film cooling, conjugate heat
+              transfer, aerothermal design optimization, and combustion kinetics.
+            </p>
 
-    <!-- Research interests -->
-    <section id="research" class="section">
-      <h2>Research Interests</h2>
-      <ul class="tag-list">
-        <li>Computational Fluid Dynamics</li>
-        <li>Uncertainty Quantification</li>
-        <li>Active Subspace Methods</li>
-        <li>Deep Learning Surrogate Modeling</li>
-        <li>Film Cooling &amp; Conjugate Heat Transfer</li>
-        <li>Turbulence Modeling</li>
-        <li>Chemical Kinetics Optimization</li>
-      </ul>
+            <h3 class="cv-heading">Education</h3>
+            <ul class="cv-list">
+              <li>
+                <span class="cv-role">Ph.D., Power Engineering &amp; Engineering Thermophysics</span>
+                <span class="cv-org">Institute for Aero Engine, Tsinghua University</span>
+                <span class="cv-date">2022 – Present</span>
+              </li>
+              <li>
+                <span class="cv-role">B.Eng.</span>
+                <span class="cv-org">&#9001;Your University&#9002;</span>
+                <span class="cv-date">2018 – 2022</span>
+              </li>
+            </ul>
 
-      <div class="stats">
-        <div class="stat"><span class="stat-num">65</span><span class="stat-label">Citations</span></div>
-        <div class="stat"><span class="stat-num">6</span><span class="stat-label">h-index</span></div>
-        <div class="stat"><span class="stat-num">15+</span><span class="stat-label">Publications</span></div>
-      </div>
-      <p class="stats-note">Metrics from <a href="https://scholar.google.com/citations?user=UbIC20AAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a>.</p>
-    </section>
+            <h3 class="cv-heading">Honors &amp; Awards</h3>
+            <ul class="cv-list">
+              <li>
+                <span class="cv-role">GPPS Best Paper Award</span>
+                <span class="cv-org">Global Power &amp; Propulsion Society (GPPS)</span>
+                <span class="cv-date">2023</span>
+              </li>
+            </ul>
 
-    <!-- Publications -->
-    <section id="publications" class="section">
-      <h2>Publications</h2>
-      <p class="section-note">Author <strong>Feixue&nbsp;Cai</strong> highlighted. See <a href="https://scholar.google.com/citations?user=UbIC20AAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a> for the full and up-to-date list.</p>
+            <h3 class="cv-heading">Research Interests</h3>
+            <p class="interests">
+              Computational Fluid Dynamics · Uncertainty Quantification · Active
+              Subspace Methods · Deep Learning Surrogates · Conjugate Heat Transfer
+              · Turbulence Modeling · Chemical Kinetics
+            </p>
+          </div>
 
-      <h3 class="year-heading">2026</h3>
-      <ol class="pub-list">
-        <li>
-          B. Xu, X. Guo, <strong>F. Cai</strong>, X. Li, M. Yao, Z. Ren.
-          <span class="pub-title">Attention-Enhanced Surrogate Modeling and Reinforcement Learning for Source-Term-Based Aerothermal Design Optimization.</span>
-          <em>Aerospace Science and Technology</em>, 112835, 2026.
-        </li>
-        <li>
-          <strong>F. Cai</strong>, H. Zhou, Z. Ren.
-          <span class="pub-title">Physics-Enforced Neural Ordinary Differential Equation for Chemical Kinetics Optimization in Reaction–Diffusion Systems.</span>
-          <em>arXiv preprint arXiv:2603.28478</em>, 2026.
-        </li>
-        <li>
-          <strong>F. Cai</strong>, H. Zhou, M. Yao, Z. Ren.
-          <span class="pub-title">Film cooling-oriented turbulence modeling: Uncertainty quantification and optimization by deep active subspace for rounded laidback holes.</span>
-          <em>Applied Thermal Engineering</em>, 130742, 2026.
-        </li>
-        <li>
-          <strong>F. Cai</strong>, X. Su, M. J. Cleary, Z. Ren, A. R. Masri.
-          <span class="pub-title">Efficient sensitivity analysis and optimization of sectional soot model in burner-stabilized stagnation flame using fixed flux approximation.</span>
-          <em>Combustion and Flame</em> 285, 114781, 2026.
-        </li>
-        <li>
-          X. Li, <strong>F. Cai</strong>, B. Xu, M. Yao.
-          <span class="pub-title">Machine learning-aided exploration of crossflow effect on cooling effectiveness for laidback fan-shaped holes.</span>
-          <em>Applied Thermal Engineering</em>, 130072, 2026.
-        </li>
-        <li>
-          <strong>F. Cai</strong>, H. Zhou, M. Yao, Z. Ren.
-          <span class="pub-title">Exploiting active subspace for modeling uncertainty and optimization in fan-shaped film cooling simulation.</span>
-          <em>Journal of Fluids Engineering</em> 148(6), 061501, 2026.
-          <span class="cited">Cited by 8</span>
-        </li>
-      </ol>
+          <aside class="scholar-box">
+            <div class="scholar-box-title">Cited by</div>
+            <table>
+              <tbody>
+                <tr><td>Citations</td><td>65</td></tr>
+                <tr><td>h-index</td><td>6</td></tr>
+                <tr><td>i10-index</td><td>2</td></tr>
+              </tbody>
+            </table>
+            <a class="scholar-box-link" href="https://scholar.google.com/citations?user=UbIC20AAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar ↗</a>
+          </aside>
+        </div>
+      </section>
 
-      <h3 class="year-heading">2025</h3>
-      <ol class="pub-list">
-        <li>
-          <strong>F. Cai</strong>, H. Zhou, F. Chen, M. Yao, Z. Ren.
-          <span class="pub-title">Deep active subspace method for dominant factor exploration and optimization in fan-shaped film cooling.</span>
-          <em>International Journal of Heat and Mass Transfer</em> 239, 126559, 2025.
-          <span class="cited">Cited by 11</span>
-        </li>
-        <li>
-          <strong>F. Cai</strong>, H. Zhou, M. Yao, Z. Ren.
-          <span class="pub-title">Active subspace-aided global sensitivity analysis and optimization of turbulence model coefficients for film cooling simulations.</span>
-          <em>Applied Thermal Engineering</em> 270, 126157, 2025.
-          <span class="cited">Cited by 3</span>
-        </li>
-        <li>
-          X. Su, A. Nobili, <strong>F. Cai</strong>, A. Cuoci, A. Frassoldati, H. Zhou, M. J. Cleary, Z. Ren, et al.
-          <span class="pub-title">A data-driven method to optimize soot kinetics based on uncertainty quantification and the active subspace approach.</span>
-          <em>Combustion and Flame</em> 276, 114137, 2025.
-          <span class="cited">Cited by 3</span>
-        </li>
-        <li>
-          X. Li, <strong>F. Cai</strong>, F. Chen, Y. Mo, M. Yao, Z. Ren.
-          <span class="pub-title">Impact of a Crossflow-to-Jet Velocity Ratio on Cooling Effectiveness for Shaped Holes.</span>
-          <em>Journal of Thermophysics and Heat Transfer</em>, 1–17, 2025.
-          <span class="cited">Cited by 2</span>
-        </li>
-      </ol>
+      <!-- Publications: flat list, year tagged -->
+      <section id="publications" class="section">
+        <h2>Publications</h2>
+        <div class="pub-list">
 
-      <h3 class="year-heading">2024</h3>
-      <ol class="pub-list">
-        <li>
-          <strong>F. Cai</strong>, H. Zhou, F. Chen, M. Yao, Z. Ren.
-          <span class="pub-title">Deep learning-aided active subspace exploration of free-stream effects for fan-shaped film cooling.</span>
-          <em>Physics of Fluids</em> 36(9), 2024.
-          <span class="cited">Cited by 9</span>
-        </li>
-        <li>
-          <strong>F. Cai</strong>, H. Zhou, M. Yao, Z. Ren.
-          <span class="pub-title">An accelerated time-scale decomposition algorithm for transient thermal fluid-solid coupled simulations in multi-medium systems.</span>
-          <em>International Journal of Heat and Fluid Flow</em> 107, 109364, 2024.
-          <span class="cited">Cited by 9</span>
-        </li>
-        <li>
-          <strong>F. Cai</strong>, L. Zhang, H. Zhou, M. Yao, Z. Ren.
-          <span class="pub-title">An adaptive fluid-solid coupling time step control algorithm for unsteady conjugate heat transfer.</span>
-          <em>Proceedings of the Institution of Mechanical Engineers, Part C</em>, 2024.
-          <span class="cited">Cited by 7</span>
-        </li>
-      </ol>
+          <article class="pub">
+            <div class="pub-head">
+              <a class="pub-title" href="https://doi.org/10.1016/j.ast.2026.112835" target="_blank" rel="noopener">Attention-Enhanced Surrogate Modeling and Reinforcement Learning for Source-Term-Based Aerothermal Design Optimization</a>
+              <span class="pub-year">2026</span>
+            </div>
+            <div class="pub-meta">B. Xu, X. Guo, <strong>F. Cai</strong>, X. Li, M. Yao, Z. Ren · <em>Aerospace Science and Technology</em></div>
+            <p class="pub-abstract">An optimization framework that couples attention-mechanism surrogate models with reinforcement learning to drive source-term-based aerothermal design, improving both efficiency and accuracy over conventional CFD loops.</p>
+          </article>
 
-      <h3 class="year-heading">2023</h3>
-      <ol class="pub-list">
-        <li>
-          <strong>F. Cai</strong>, H. Zhou, M. Yao, Z. Ren.
-          <span class="pub-title">A Mean-Fluctuation Decomposition Scheme to Accelerate the Simulation of Unsteady Conjugate Heat Transfer.</span>
-          2023.
-        </li>
-      </ol>
+          <article class="pub">
+            <div class="pub-head">
+              <a class="pub-title" href="https://arxiv.org/abs/2603.28478" target="_blank" rel="noopener">Physics-Enforced Neural Ordinary Differential Equation for Chemical Kinetics Optimization in Reaction–Diffusion Systems</a>
+              <span class="pub-year">2026</span>
+            </div>
+            <div class="pub-meta"><strong>F. Cai</strong>, H. Zhou, Z. Ren · <em>arXiv:2603.28478</em></div>
+            <p class="pub-abstract">A neural-ODE framework that embeds physical conservation constraints into the learned dynamics, enabling robust optimization of chemical-kinetics parameters in reaction–diffusion systems.</p>
+          </article>
 
-      <h3 class="year-heading">2021</h3>
-      <ol class="pub-list">
-        <li>
-          Z. Weng, R. Mével, Z. Huang, <strong>F. Cai</strong>, J. Xu.
-          <span class="pub-title">Direct detonation initiation: A comparison between the critical curvature and critical decay rate models.</span>
-          <em>Physics of Fluids</em> 33(9), 2021.
-          <span class="cited">Cited by 13</span>
-        </li>
-      </ol>
-    </section>
+          <article class="pub">
+            <div class="pub-head">
+              <a class="pub-title" href="https://doi.org/10.1016/j.applthermaleng.2026.130742" target="_blank" rel="noopener">Film Cooling-Oriented Turbulence Modeling: UQ and Optimization by Deep Active Subspace for Rounded Laidback Holes</a>
+              <span class="pub-year">2026</span>
+            </div>
+            <div class="pub-meta"><strong>F. Cai</strong>, H. Zhou, M. Yao, Z. Ren · <em>Applied Thermal Engineering</em></div>
+            <p class="pub-abstract">Applies a deep active-subspace method to quantify and optimize turbulence-model uncertainties in RANS simulations of rounded laidback film-cooling holes, sharpening predictive accuracy.</p>
+          </article>
 
-    <!-- Contact -->
-    <section id="contact" class="section">
-      <h2>Contact</h2>
-      <p>
-        Email: <a href="mailto:your-email@mails.tsinghua.edu.cn">your-email@mails.tsinghua.edu.cn</a><br />
-        Google Scholar: <a href="https://scholar.google.com/citations?user=UbIC20AAAAAJ&hl=en" target="_blank" rel="noopener">profile</a>
-      </p>
-    </section>
-  </main>
+          <article class="pub">
+            <div class="pub-head">
+              <a class="pub-title" href="https://doi.org/10.1016/j.combustflame.2026.114781" target="_blank" rel="noopener">Efficient Sensitivity Analysis and Optimization of Sectional Soot Model in Burner-Stabilized Stagnation Flame Using Fixed Flux Approximation</a>
+              <span class="pub-year">2026</span>
+            </div>
+            <div class="pub-meta"><strong>F. Cai</strong>, X. Su, M. J. Cleary, Z. Ren, A. R. Masri · <em>Combustion and Flame</em></div>
+            <p class="pub-abstract">Introduces a fixed diffusion-flux approximation that yields a ~3× speedup in sensitivity calculations for sectional soot models and reduces the maximum optimization loss by over 50%.</p>
+          </article>
 
-  <footer class="site-footer">
-    <p>&copy; <span id="year"></span> Feixue Cai. Built with GitHub Pages.</p>
-  </footer>
+          <article class="pub">
+            <div class="pub-head">
+              <a class="pub-title" href="https://doi.org/10.1016/j.applthermaleng.2026.130072" target="_blank" rel="noopener">Machine Learning-Aided Exploration of Crossflow Effect on Cooling Effectiveness for Laidback Fan-Shaped Holes</a>
+              <span class="pub-year">2026</span>
+            </div>
+            <div class="pub-meta">X. Li, <strong>F. Cai</strong>, B. Xu, M. Yao · <em>Applied Thermal Engineering</em></div>
+            <p class="pub-abstract">Combines machine-learning surrogates with active-subspace analysis to reveal how internal crossflow reshapes film-cooling effectiveness in laidback fan-shaped holes and identify the dominant flow parameters.</p>
+          </article>
+
+          <article class="pub">
+            <div class="pub-head">
+              <a class="pub-title" href="https://doi.org/10.1115/1.4070957" target="_blank" rel="noopener">Exploiting Active Subspace for Modeling Uncertainty and Optimization in Fan-Shaped Film Cooling Simulation</a>
+              <span class="pub-year">2026</span>
+            </div>
+            <div class="pub-meta"><strong>F. Cai</strong>, H. Zhou, M. Yao, Z. Ren · <em>Journal of Fluids Engineering</em> 148(6)</div>
+            <p class="pub-abstract">Uses the active-subspace method to quantify uncertainty from turbulent Prandtl number and SST closure coefficients, then optimizes them to cut average relative errors to roughly 1–4% across blowing ratios.</p>
+          </article>
+
+          <article class="pub">
+            <div class="pub-head">
+              <a class="pub-title" href="https://doi.org/10.1016/j.ijheatmasstransfer.2024.126559" target="_blank" rel="noopener">Deep Active Subspace Method for Dominant Factor Exploration and Optimization in Fan-Shaped Film Cooling</a>
+              <span class="pub-year">2025</span>
+            </div>
+            <div class="pub-meta"><strong>F. Cai</strong>, H. Zhou, F. Chen, M. Yao, Z. Ren · <em>Int. J. Heat and Mass Transfer</em> 239</div>
+            <p class="pub-abstract">A deep-learning active-subspace approach that pinpoints dominant parameters and optimizes fan-shaped film-cooling effectiveness, offering an efficient alternative to high-fidelity CFD.</p>
+          </article>
+
+          <article class="pub">
+            <div class="pub-head">
+              <a class="pub-title" href="https://doi.org/10.1016/j.applthermaleng.2025.126157" target="_blank" rel="noopener">Active Subspace-Aided Global Sensitivity Analysis and Optimization of Turbulence Model Coefficients for Film Cooling Simulations</a>
+              <span class="pub-year">2025</span>
+            </div>
+            <div class="pub-meta"><strong>F. Cai</strong>, H. Zhou, M. Yao, Z. Ren · <em>Applied Thermal Engineering</em> 270</div>
+            <p class="pub-abstract">Performs active-subspace-based global sensitivity analysis and optimizes turbulence-model coefficients to improve film-cooling predictions across operating conditions.</p>
+          </article>
+
+          <article class="pub">
+            <div class="pub-head">
+              <a class="pub-title" href="https://doi.org/10.1016/j.combustflame.2025.114137" target="_blank" rel="noopener">A Data-Driven Method to Optimize Soot Kinetics Based on Uncertainty Quantification and the Active Subspace Approach</a>
+              <span class="pub-year">2025</span>
+            </div>
+            <div class="pub-meta">X. Su, A. Nobili, <strong>F. Cai</strong>, A. Cuoci, H. Zhou, M. J. Cleary, Z. Ren, et al. · <em>Combustion and Flame</em> 276</div>
+            <p class="pub-abstract">Integrates uncertainty quantification, active subspaces, and gradient descent to tune soot kinetic parameters against burner-stabilized stagnation flame data, improving particle-size-distribution predictions.</p>
+          </article>
+
+          <article class="pub">
+            <div class="pub-head">
+              <a class="pub-title" href="https://doi.org/10.2514/1.t7275" target="_blank" rel="noopener">Impact of a Crossflow-to-Jet Velocity Ratio on Cooling Effectiveness for Shaped Holes</a>
+              <span class="pub-year">2025</span>
+            </div>
+            <div class="pub-meta">X. Li, <strong>F. Cai</strong>, F. Chen, Y. Mo, M. Yao, Z. Ren · <em>J. Thermophysics and Heat Transfer</em></div>
+            <p class="pub-abstract">Builds a CNN surrogate and active-subspace analysis to show how the crossflow-to-jet velocity ratio governs unimodal/bimodal cooling-effectiveness modes for shaped holes.</p>
+          </article>
+
+          <article class="pub">
+            <div class="pub-head">
+              <a class="pub-title" href="https://doi.org/10.1063/5.0221339" target="_blank" rel="noopener">Deep Learning-Aided Active Subspace Exploration of Free-Stream Effects for Fan-Shaped Film Cooling</a>
+              <span class="pub-year">2024</span>
+            </div>
+            <div class="pub-meta"><strong>F. Cai</strong>, H. Zhou, F. Chen, M. Yao, Z. Ren · <em>Physics of Fluids</em> 36(9)</div>
+            <p class="pub-abstract">A CNN surrogate for film-cooling effectiveness combined with active-subspace analysis identifies dominant free-stream factors — notably the blowing ratio — and guides optimization.</p>
+          </article>
+
+          <article class="pub">
+            <div class="pub-head">
+              <a class="pub-title" href="https://doi.org/10.1016/j.ijheatfluidflow.2024.109364" target="_blank" rel="noopener">An Accelerated Time-Scale Decomposition Algorithm for Transient Thermal Fluid-Solid Coupled Simulations in Multi-Medium Systems</a>
+              <span class="pub-year">2024</span>
+            </div>
+            <div class="pub-meta"><strong>F. Cai</strong>, H. Zhou, M. Yao, Z. Ren · <em>Int. J. Heat and Fluid Flow</em> 107</div>
+            <p class="pub-abstract">A time-scale decomposition and multi-medium coupling scheme that efficiently resolves transient thermal fluid–solid coupling in layered systems such as thermal barrier coatings.</p>
+          </article>
+
+          <article class="pub">
+            <div class="pub-head">
+              <a class="pub-title" href="https://doi.org/10.1177/09544062241238805" target="_blank" rel="noopener">An Adaptive Fluid-Solid Coupling Time Step Control Algorithm for Unsteady Conjugate Heat Transfer</a>
+              <span class="pub-year">2024</span>
+            </div>
+            <div class="pub-meta"><strong>F. Cai</strong>, L. Zhang, H. Zhou, M. Yao, Z. Ren · <em>Proc. IMechE Part C</em> 238(16)</div>
+            <p class="pub-abstract">Pairs a coupling-error correlation with PID control to adaptively set the fluid–solid coupling time step, cutting computational cost by 40–90% without sacrificing accuracy.</p>
+          </article>
+
+          <article class="pub">
+            <div class="pub-head">
+              <a class="pub-title" href="https://doi.org/10.33737/gpps23-tc-167" target="_blank" rel="noopener">A Mean-Fluctuation Decomposition Scheme to Accelerate the Simulation of Unsteady Conjugate Heat Transfer</a>
+              <span class="award-badge">★ GPPS Best Paper</span>
+              <span class="pub-year">2023</span>
+            </div>
+            <div class="pub-meta"><strong>F. Cai</strong>, H. Zhou, M. Yao, Z. Ren · <em>GPPS Proceedings</em></div>
+            <p class="pub-abstract">A mean-fluctuation decomposition scheme that accelerates unsteady conjugate-heat-transfer simulation by about 6× while preserving solution accuracy. <strong>Recognized with the GPPS Best Paper Award.</strong></p>
+          </article>
+
+          <article class="pub">
+            <div class="pub-head">
+              <a class="pub-title" href="https://doi.org/10.1063/5.0062506" target="_blank" rel="noopener">Direct Detonation Initiation: A Comparison Between the Critical Curvature and Critical Decay Rate Models</a>
+              <span class="pub-year">2021</span>
+            </div>
+            <div class="pub-meta">Z. Weng, R. Mével, Z. Huang, <strong>F. Cai</strong>, J. Xu · <em>Physics of Fluids</em> 33(9)</div>
+            <p class="pub-abstract">Compares the critical-curvature and critical-decay-rate models for direct detonation initiation under a common Taylor–Sedov blast-wave model, clarifying the origin of their discrepancy.</p>
+          </article>
+
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section id="contact" class="section">
+        <h2>Contact</h2>
+        <ul class="contact-list">
+          <li><a href="mailto:caifx22@mails.tsinghua.edu.cn">caifx22@mails.tsinghua.edu.cn</a></li>
+          <li><a href="mailto:fxcai18@gmail.com">fxcai18@gmail.com</a></li>
+          <li><a href="mailto:cfx18@qq.com">cfx18@qq.com</a></li>
+        </ul>
+      </section>
+
+      <footer class="content-footer">
+        <p>&copy; <span id="year"></span> Feixue Cai</p>
+      </footer>
+    </main>
+  </div>
 
   <script>
     document.getElementById("year").textContent = new Date().getFullYear();
