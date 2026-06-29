@@ -20,7 +20,7 @@
 html {
   scroll-behavior: smooth;
   width: 100%;
-  font-size: 19px;
+  font-size: 18px;
 }
 
 body {
@@ -267,17 +267,10 @@ a:hover {
   white-space: nowrap;
 }
 
-.cv-list li.award-highlight {
-  position: relative;
-  background: linear-gradient(90deg, #fdf6e8 0%, rgba(253, 246, 232, 0) 88%);
-  border-left: 3px solid #e3b85a;
-  margin-left: -0.9rem;
-  padding: 0.55rem 0.6rem 0.55rem 0.6rem;
-  border-radius: 0 6px 6px 0;
-}
-
-.cv-list li.award-highlight .cv-role {
-  color: #8a5e16;
+.cv-list li.award-highlight .cv-role::before {
+  content: "★ ";
+  color: #e0a93b;
+  font-size: 0.95em;
 }
 
 .interest-list {
