@@ -122,10 +122,20 @@ a:hover {
 }
 
 .sidebar-tagline {
-  margin: 0 0 1.3rem;
+  margin: 0 0 0.55rem;
   color: var(--text-soft);
   font-size: 0.88rem;
   line-height: 1.55;
+}
+
+.sidebar-motto {
+  margin: 0 0 1.3rem;
+  color: var(--accent-strong);
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 0.85rem;
+  font-weight: 500;
+  font-style: italic;
+  letter-spacing: 0.01em;
 }
 
 .sidebar-nav {
